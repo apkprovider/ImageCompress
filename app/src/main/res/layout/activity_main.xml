@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:gravity="top"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:textSize="16dp"
+              android:textStyle="bold"
+              android:layout_margin="16dp"
+              android:layout_width="match_parent"
+              android:text="Take Picture from"
+              android:layout_height="wrap_content" />
+
+          <LinearLayout
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:textAllCaps="true" />
+          </LinearLayout>
+
+
+          <ImageView
+              android:id="@+id/imgMain"
+              android:layout_margin="16dp"
+              android:scaleType="fitXY"
+              android:layout_marginTop="16dp"
+              android:layout_gravity="center"
+              android:layout_width="300dp"
+              android:layout_height="200dp" />
+
+      </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/apkProviderColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/poweredby"
+            android:textSize="16dp"/>
+
+
+</RelativeLayout>
